@@ -1,0 +1,60 @@
+#header
+{
+    background-color: #0B2342;
+    color: white;
+}
+.arrow
+{
+    height: 20px;
+    width: 50px;
+    object-fit: cover;
+    margin-top: 9px;
+    padding-left: 10px;
+
+}
+#firstRow
+{
+    height: 100px;
+    align-content: center;
+    padding-left: 500px;
+}
+h4
+{
+    padding-left: 15px;
+}
+#heavy
+{
+    color: grey;
+}
+.borderless table {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+#last
+{
+    border-bottom: 1px #dee2e6 solid;
+}
+.btn
+{
+    margin-left: 600px;
+    /* padding-left: 500px; */
+}
+#secondButton
+{
+    margin-left: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.col-4
+{
+
+    border: 1px  #dee2e6 solid ;
+    height: 300px;
+}
+.bottom-bar{
+    color: white ;
+    background-color: #0B2342;
+}
+

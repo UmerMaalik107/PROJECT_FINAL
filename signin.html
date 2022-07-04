@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>My Account</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Allmytech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="/">Home</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="append-categories">
+           
+              </div>
+            </li>
+          </ul>
+          <form action="" class="search">
+            <input class="form-control mr-sm-2 "  type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item" id="login">
+            <a class="nav-link" href="./signin.html">Login/SignUp </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loggedIn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              
+            </a>
+            <div class="dropdown-menu" aria-labelledby="loggedIn" >
+                <a class="dropdown-item" href="adminPage.html" id="admin-dashboard">Admin Dashboard</a>
+                <a class="dropdown-item" href="" id="logout">Logout</a>
+            </div>
+          </li>
+          </ul>
+            <li class="nav-item ">
+              <a href="./cart.html"> <img class="cart"  src="./images1/cart.jpeg" alt=""></a>
+            </li>    
+      </nav>
+    </div>
+    <div class="myaccount-title text-center">
+      <h1 class="entry-title">My Account</h1>
+      <span>
+        <a href="">Home</a>
+        »
+        <strong class="breadcrumb_last" aria-current="page">My account</strong>
+      </span>
+    </div>
+    <div class="row m-4">
+      <div
+        class="col-lg-5 col-md-11 col-sm-11 col-xs-11 m-4 p-4 border-right hide-login"
+      >
+        <h5 class="text-center">LOGIN</h5>
+        <form>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="text"
+              class="form-control admin-name"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control admin-psw"
+              id="password"
+            />
+          </div>
+
+         
+        </form>
+        <button type="button" class="btn btn-primary login-btn">Login</button>
+      </div>
+      <div
+        class="col-lg-5 col-md-11 col-sm-11 col-xs-11 m-4 p-4 border-right hide-register"
+      >
+        <button type="button" class="btn btn-secondary back-to-login-btn">
+          Already Have Account
+        </button>
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="reg-first_name">First Name</label>
+            <input type="text" name="first_name" class="form-control" id="reg-first_name" />
+          </div>
+          <div class="form-group">
+            <label for="reg-last_name">Last Name</label>
+            <input type="text" name="last_name" class="form-control" id="reg-last_name" />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="reg-email"
+              name="email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              id="reg-password"
+            />
+          </div>
+          <div class="text-center">
+            <p>
+              Your personal data will be used to support your experience
+              throughout this website, to manage access to your account, and for
+              other purposes described in our privacy policy
+            </p>
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="btn  btn-danger button-product registering-btn"
+            >
+              REGISTER
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 m-4 p-4 text-center">
+        <h5 class="pt-4">REGISTER</h5>
+        <p class="pr-4 pl-4">
+          Registering for this site allows you to access your order status and
+          history. Just fill in the fields below, and we'll get a new account
+          set up for you in no time. We will only ask you for information
+          necessary to make the purchase process faster and easier.
+        </p>
+        <div class="text-center">
+          <button
+            type="button"
+            class="btn btn-danger button-product reg-button"
+          >
+            REGISTER
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <div class="row border-bottom m-5 p-4">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <h5>GREAT VALUE</h5>
+          <p>
+            We extensively test all products to match our top class standards
+            before putting it on sale
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <h5>NATIONWIDE DELIVERY</h5>
+          <p>
+            Delivered in 24 - 72 Hours all over Pakistan with nation's leading
+            Courier Partners.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <h5>7 DAY REPLACEMENT WARRANTY</h5>
+          <p>
+            If there's a fault in your product we replace it without asking too
+            many Questions
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>AGILE HELP CENTER</h5>
+          <p>
+            Just message us on Facebook / Instagram or Whatsapp +923222120130 &
+            see how we solve your problems.
+          </p>
+        </div>
+      </div>
+      <div class="row m-5">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <h5>GET IN TOUCH</h5>
+          <p>Whatsapp - +92-3222120130</p>
+          <p>Facebook Messenger - allmytechpk</p>
+          <p>Instagram Messenger - allmytechpk</p>
+          <p>Phone - (+92) 2135851832 | (+92)-21 38943645</p>
+          <p>Email - support@allmytech.pk</p>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          <h5>TRENDING</h5>
+          <p>True Wireless Earbuds</p>
+
+          <p>iPhone 13 Series</p>
+
+          <p>Wireless Chargers</p>
+
+          <p>OnePlus 9 / 9 Pro</p>
+
+          <p>iPhone 12 Series</p>
+
+          <p>Galaxy S21 / S21+ / S21 Ultra</p>
+
+          <p>Watch Bands</p>
+
+          <p>Wireless Speakers</p>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+          <h5>ADDRESS</h5>
+          <p>
+            Mezzanine Floor, 39-C, Rahat Lane 3, DHA Phase 6, Karachi, Pakistan.
+          </p>
+          <img src="./images1/earBuds/map.png" alt="" />
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      $(document).ready(function () {
+        $(".reg-button").click(function () {
+          $(".hide-login").hide();
+          $(".hide-register").show();
+        });
+        $(".back-to-login-btn").click(function () {
+          $(".hide-login").show();
+          $(".hide-register").hide();
+        });
+          // alert("BackEnd not Connected Can't login");
+        });
+        // $(".registering-btn").click(function () {
+        //   alert("BackEnd not Connected Can't Register");
+        // });
+       
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+  <script src="./scripts/api.js"></script>
+
+  </body>
+</html>
